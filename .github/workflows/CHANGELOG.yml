@@ -16,7 +16,7 @@ jobs:
     - uses: BobAnkh/auto-generate-changelog@v1.2.5
       with:
         REPO_NAME: 'Akshay-Antier/test_repo'
-        ACCESS_TOKEN: ${{secrets.TOKEN}}
+        ACCESS_TOKEN: ${{secrets.SECRET}}
         PATH: 'CHANGELOG.md'
         COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
         TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'

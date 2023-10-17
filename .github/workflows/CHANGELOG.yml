@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           ref: main # Specify the branch to check out if not the default branch
 
       - name: Generate Changelog
-        uses: /auto-generate-changelog@v1.2.5
+        uses: Akshay-Antier/test_repo/commits/v1
       with:
         REPO_NAME: 'Akshay-Antier/test_repo'
         ACCESS_TOKEN: ${{secrets.SECRET}}
         PATH: 'CHANGELOG.md'
         COMMIT_MESSAGE: 'docs(CHANGELOG): update release notes'
-        #TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'
+        TYPE: 'feat:Feature,fix:Bug Fixes,docs:Documentation,refactor:Refactor,perf:Performance Improvements'

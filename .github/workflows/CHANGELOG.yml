@@ -16,7 +16,7 @@ jobs:
           ref: main # Specify the branch to check out if not the default branch
 
       - name: Generate Changelog
-        uses: Akshay-Antier/test_repo/commits/v2
+        uses: /Akshay-Antier/test_repo/commits/v1
         with:
           REPO_NAME: 'Akshay-Antier/test_repo'
           ACCESS_TOKEN: ${{secrets.SECRET}}
